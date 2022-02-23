@@ -1,15 +1,19 @@
 section{
     position: absolute;
-    height: 700px;
+    height: 620px;
     width: 600px;
     background-color: grey;
     border-radius: 2%;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: black 
 }
 
 section .calculadora .pantalla{
-    height: 200px;
-    
-
+    height: 238px;
+    margin-bottom: 0;
+    background-color: rgb(58, 58, 58);
 }
 
 section .calculadora .pantalla .circulo{
@@ -19,7 +23,7 @@ section .calculadora .pantalla .circulo{
     height: 15px;
     border-radius: 50%;
 }
-.circulo.rojo{
+.rojo{
     background-color: red;
 }
 .amarillo{
@@ -33,24 +37,46 @@ section .calculadora .pantalla h1{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(207, 207, 207);
     float: right;
+    margin-bottom: 40px;
 }
 
 section .calculadora .teclado .fila {
     float: left;
     padding: 0px;
 }
+.primera {
+    background-color: rgb(77, 75, 75) ;
+}
 .naranja{
     background-color: orange;
 }
-section .calculadora .teclado .fila li{
-    list-style: none; 
-    height: 50px;
-    width: 140px;
+section .calculadora .teclado .fila div{
+    float: left;
+    margin:0px;
+    height: 75px;
+    width: 148px;
     border-top: 0px;
     display: inline-block;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-color: black ;
     text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    font-size: 40px;
+    color: rgb(207, 207, 207);
+    font-family: 'Times New Roman', Times, serif;
 }   
+
+section .calculadora .teclado .fila .cero{
+    width: 298px;
+}
+
+section .calculadora .teclado .fila .der{
+    border-bottom-right-radius: 20%;
+}
+section .calculadora .teclado .fila .izq{
+    border-bottom-left-radius: 20%;
+}
+
 
